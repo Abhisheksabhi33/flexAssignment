@@ -1,0 +1,89 @@
+/* General styles */
+.dashboard-container {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styles */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .user-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+  }
+  
+  .user-details-table th,
+  .user-details-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-details-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .user-details-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-details-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .table-container {
+      overflow-x: auto;
+    }
+  
+    .user-details-table {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: auto;
+    }
+  
+    .user-details-table th,
+    .user-details-table td {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 8px;
+    }
+  }
+
+  
+  
+.batch-change {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .batch-change div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .batch-change button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .batch-change button:hover {
+    background-color: #0056b3;
+  }
