@@ -1,5 +1,14 @@
-USE bpffm0sekcbbwrjtdwqa;
 
+
+MYSQL CLI COMMANDS:
+mysql -h bpffm0sekcbbwrjtdwqa-mysql.services.clever-cloud.com -P 3306 -u ubks0geq63ss4jvt -p bpffm0sekcbbwrjtdwqa
+
+PASSWORD:
+bpffm0sekcbbwrjtdwqa
+
+
+
+USE bpffm0sekcbbwrjtdwqa;
 
 CREATE TABLE Users (
     ID INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -18,8 +27,6 @@ CREATE TABLE Payment (
     LastPaymentDate DATE DEFAULT (CURRENT_DATE),
     PaymentStatus CHAR(1) DEFAULT 'F' CHECK (PaymentStatus IN ('T', 'F'))
 );
-
-
 
 
 
